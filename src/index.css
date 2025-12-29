@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+    position: relative;
+}
+
+header .restaurant-name {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 2rem;
+}
+
+.hero-figure {
+    width: 100%;
+    height: 20rem;
+}
+
+.hero-figure > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+header > figcaption {
+    text-align: center;
+    position: absolute;
+    color: rgb(255,255,255);
+    opacity: 0.5;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 1px 1px black;
+}
+
+header > figcaption a {
+    color:  rgb(255,255,255);
+    text-decoration: none;
+}
+
+header .nav-bar  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    /* position */
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .nav-bar button {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    text-shadow: 0 1px 4px black;
+    font-weight: 600;
+}
